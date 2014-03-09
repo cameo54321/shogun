@@ -312,6 +312,14 @@ CMultilabelLabels::set_class_labels(SGVector <int32_t> ** labels_list)
 }
 
 
+// The following includes are only needed for save() and load()
+
+#include <string>
+#include <iostream>
+#include <fstream>
+#include <limits>
+
+
 void
 CMultilabelLabels::display() const
 {
